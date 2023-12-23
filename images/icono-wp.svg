@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="97.88" height="97.88" viewBox="0 0 97.88 97.88">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_31);
+      }
+
+      .cls-2 {
+        fill: url(#Degradado_sin_nombre_31-2);
+      }
+
+      .cls-3 {
+        fill: url(#Degradado_sin_nombre_31-3);
+      }
+
+      .cls-4 {
+        fill: url(#Degradado_sin_nombre_31-4);
+      }
+
+      .cls-5 {
+        fill: url(#Degradado_sin_nombre_31-5);
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_31" data-name="Degradado sin nombre 31" x1="45.58" y1="6.93" x2="45.58" y2="74.7" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00749a"/>
+      <stop offset="1" stop-color="#00599a"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_31-2" x1="48.94" y1="0" x2="48.94" y2="97.88" xlink:href="#Degradado_sin_nombre_31"/>
+    <linearGradient id="Degradado_sin_nombre_31-3" x1="18.79" y1="31.84" x2="18.79" y2="86.7" xlink:href="#Degradado_sin_nombre_31"/>
+    <linearGradient id="Degradado_sin_nombre_31-4" x1="49.98" y1="52.62" x2="49.98" y2="90.93" xlink:href="#Degradado_sin_nombre_31"/>
+    <linearGradient id="Degradado_sin_nombre_31-5" x1="80.47" y1="28.81" x2="80.47" y2="85.22" xlink:href="#Degradado_sin_nombre_31"/>
+  </defs>
+  <g id="Capa_2" data-name="Capa 2">
+    <g id="Capa_1-2" data-name="Capa 1">
+      <g>
+        <path class="cls-1" d="M77.29,46.82a22.15,22.15,0,0,0-3.46-11.58,19.72,19.72,0,0,1-4.12-9.85,7.26,7.26,0,0,1,7-7.46c.18,0,.36,0,.56,0a42,42,0,0,0-63.45,7.89c1,0,1.91.06,2.7.06,4.38,0,11.19-.53,11.19-.53A1.73,1.73,0,1,1,28,28.84s-2.27.26-4.79.4L38.53,74.7l9.2-27.55L41.19,29.24c-2.27-.14-4.4-.4-4.4-.4a1.73,1.73,0,0,1,.26-3.45s6.93.53,11.05.53c4.38,0,11.19-.53,11.19-.53a1.73,1.73,0,0,1,.28,3.45s-2.27.26-4.8.4L70,74.37l4.18-14A51.69,51.69,0,0,0,77.29,46.82Z"/>
+        <path class="cls-2" d="M83.53,14.35A48.92,48.92,0,1,0,97.88,48.93,48.87,48.87,0,0,0,83.53,14.35ZM48.94,95.62A46.69,46.69,0,1,1,95.63,48.93,46.68,46.68,0,0,1,48.94,95.62Z"/>
+        <path class="cls-3" d="M30.63,86.7l-20-54.86A42,42,0,0,0,30.63,86.7Z"/>
+        <path class="cls-4" d="M49.67,52.62,37.08,89.21a41.86,41.86,0,0,0,25.79-.67,3.31,3.31,0,0,1-.29-.56Z"/>
+        <path class="cls-5" d="M85.79,28.81a32.46,32.46,0,0,1,.28,4.3,39.27,39.27,0,0,1-3.2,15L70,85.22A42,42,0,0,0,85.79,28.81Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
