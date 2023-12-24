@@ -1,6 +1,6 @@
 //ajusta la altura de la seccion "cabecera" con la altura del disponible viewport------------------------------
   var altura = $(window).innerHeight();
-  alert("altura: "+altura+"px");
+  //alert("altura: "+altura+"px");
   $('#cabecera').height(altura);
 
 window.addEventListener("scroll", function(){
