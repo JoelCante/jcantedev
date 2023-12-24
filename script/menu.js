@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
   var altura = $(window).innerHeight();
-  //alert(altura);
+  alert("altura: "+altura+"px");
   $('#cabecera').height(altura);
 });
 
