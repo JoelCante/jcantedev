@@ -77,8 +77,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(8px);
+    background-color: var(--blanco);
+    border-bottom: .5px solid var(--azul-claro);
     padding-top: 0px;
   }
 
@@ -182,7 +182,7 @@ body {
     justify-content:space-between;
     width: 100%;
     height: 100%;
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
   }
 
   .contenedor-avatar{
@@ -208,7 +208,7 @@ body {
     justify-content: center;
     text-align: center;
     margin: 10px 0px;
-    /*border: 2px solid wheat;*/
+   /* border: 2px solid wheat;*/
   }
 
   .texto-bienvenida h1{
@@ -257,6 +257,44 @@ body {
     color: var(--gris-claro);
   }
 
+  .seccion-sobre-mi{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+  }
+
+  .contenedor-sobre-mi{
+    width: 100%;
+    padding: 150px 0px;
+  }
+
+  .contenedor-sobre-mi h1{
+    font-size: 45px;
+    font-weight:800;
+    padding: 20px 0px;
+  }
+
+  .contenedor-sobre-mi h2{
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .contenedor-sobre-mi h3{
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  .degradado-azul{
+    background: -webkit-linear-gradient(90deg, var(--azul-principal), var(--azul-oscuro));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--azul-principal);
+  }
+
+
 
   @media screen and (max-width: 900px) {
     .ancho {
@@ -271,20 +309,78 @@ body {
       display: none;
     }
 
-    .cabecera{
+    
+  .icono-movil{
+    display: block;
+    font-size: 20px;
+  }
+
+   /* .cabecera{
       border: 3px solid beige;
+    }*/
+
+    .contenedor-avatar{
+      width: 115px;
+      height: 115px;
+      margin-top:7rem ;
+      /*border: 1px solid salmon;*/
     }
 
     .texto-bienvenida h1{
-      font-size: 40px;
+      font-size: 43px;
     }
 
     .contenedor-botones-h {
       width: 100%;
+      /*border: 2px solid darkblue;*/
     }
+
+    .boton-medio {
+      width: 45%;
+      height: 50px;
+      font-size: 15px;
+    }
+
+    .contenedor-sobre-mi{
+      padding: 100px 0px;
+    }
+  
+    .contenedor-sobre-mi h1{
+      font-size: 40px;
+      padding: 15px 0px;
+    }
+  
+    .contenedor-sobre-mi h2{
+      font-size: 35px;
+    }
+  
+    .contenedor-sobre-mi h3{
+      font-size: 30px;
+    }
+  
   }
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 350px) {
+
+    .logo{
+      width: 24px;
+      height: 26px;
+      transition: 0.5s;
+    }
+
+    .contenedor-menu{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 40px;
+    }
+
+    #menu-flotante.abajo .logo{
+      background-image: url(images/logo.svg);
+      width: 20px;
+      height: 23px;
+    }
 
     .contenedor-avatar{
       width: 85px;
@@ -292,12 +388,16 @@ body {
       margin-top:7rem ;
       /*border: 1px solid salmon;*/
     }
-  
-   .texto-bienvenida h1{
-      font-size: 30px;
+
+    .boton-medio {
+      width: 45%;
+      height: 45px;
+      font-size: 14px;
     }
 
-    .contenedor-botones-h {
-      width: 100%;
+  
+   .texto-bienvenida h1{
+      font-size: 35px;
     }
+
   }
