@@ -77,7 +77,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: var(--blanco);
+    background: rgba(255, 255, 255, 0.93);
+    backdrop-filter: blur(20px);
     border-bottom: .5px solid var(--azul-claro);
     padding-top: 0px;
   }
@@ -114,7 +115,7 @@ body {
   }
 
   .menu ul li{
-    margin: 0px 18px;
+    margin: 0px 15px;
     font-size: 14px;
     transition: 0.5s;
   } 
@@ -255,6 +256,7 @@ body {
     font-size: 25px;
     margin-top: 25px;
     color: var(--gris-claro);
+    position: relative;
   }
 
   .seccion-sobre-mi{
@@ -268,22 +270,44 @@ body {
   .contenedor-sobre-mi{
     width: 100%;
     padding: 150px 0px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .fondo-motivo{
+    width: 100%;
+    height: 100%;
+    background-image: url(images/motivo-fondo.svg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top:0;
+    z-index: 1;
+  }
+
+  .contenedor-texto{
+    position: relative;
+    z-index: 5;
   }
 
   .contenedor-sobre-mi h1{
     font-size: 45px;
     font-weight:800;
+    line-height: 50px;
     padding: 20px 0px;
   }
 
   .contenedor-sobre-mi h2{
     font-size: 40px;
     font-weight: 700;
+    line-height: 45px;
   }
 
   .contenedor-sobre-mi h3{
     font-size: 35px;
     font-weight: 600;
+    line-height: 40px;
+    color: var(--azul-principal);
   }
 
   .degradado-azul{
@@ -294,11 +318,34 @@ body {
     color: var(--azul-principal);
   }
 
+  .contenedor-descripcion{
+    width: 100%;
+    padding: 100px 0px;
+    color: var(--blanco);
+    background-color: var(--negro);
+    overflow: hidden;
+  }
+
+  .contenedor-descripcion p{
+    width: 70%;
+    margin: auto;
+    padding: 50px 0px;
+  }
+
+  .boton-ancho{
+    display: inline-flex;
+    justify-content: space-evenly;
+    border-radius: 12px;
+    width: 15%;
+    height: 50px;
+  }
+
+
 
 
   @media screen and (max-width: 900px) {
     .ancho {
-      max-width: 90%;
+      max-width: 85%;
       margin: auto;
       /*border: 1px solid;*/
     }
@@ -347,16 +394,30 @@ body {
   
     .contenedor-sobre-mi h1{
       font-size: 40px;
+      line-height: 45px;
       padding: 15px 0px;
     }
   
     .contenedor-sobre-mi h2{
       font-size: 35px;
+      line-height: 40px;
     }
   
     .contenedor-sobre-mi h3{
       font-size: 30px;
+      line-height: 35px;
     }
+
+    .contenedor-descripcion p{
+      width: 100%;
+      margin: auto;
+    }
+
+    .boton-ancho{
+      width: 50%;
+      height: 45px;
+    }
+  
   
   }
 
