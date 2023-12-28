@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="111.99" viewBox="0 0 96 111.99">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_304);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_304" data-name="Degradado sin nombre 304" x1="48" x2="48" y2="111.99" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f15a29"/>
+      <stop offset="1" stop-color="#d04d26"/>
+    </linearGradient>
+  </defs>
+  <g id="Capa_2" data-name="Capa 2">
+    <g id="Capa_1-2" data-name="Capa 1">
+      <g>
+        <path id="Icon_awesome-html5" data-name="Icon awesome-html5" class="cls-1" d="M0,0,8.73,98.94l39.14,13,39.4-13L96,0ZM77.06,32h-46l1,12.35H76l-3.39,37.1L48.15,88.17v.08h-.28L23.21,81.42l-1.52-19H33.63L34.49,72l13.38,3.63L61.29,72l1.5-15.55H21.08l-3.2-36.4H78.15Z"/>
+        <polygon class="cls-2" points="77.06 31.97 31.1 31.97 32.13 44.32 76.03 44.32 72.63 81.42 48.15 88.17 48.15 88.25 47.87 88.25 23.21 81.42 21.69 62.47 33.63 62.47 34.49 72 47.87 75.63 61.29 72 62.79 56.45 21.08 56.45 17.88 20.05 78.15 20.05 77.06 31.97"/>
+      </g>
+    </g>
+  </g>
+</svg>
