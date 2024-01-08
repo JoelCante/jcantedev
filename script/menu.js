@@ -1,12 +1,8 @@
-//ajusta la altura de la seccion "cabecera" con la altura del disponible viewport------------------------------
-  var altura = $(window).innerHeight();
-  //alert("altura: "+altura+"px");
-  $('#cabecera').height(altura);
-
 window.addEventListener("scroll", function(){
   var menu = document.getElementById('menu-flotante');
   menu.classList.toggle("abajo",window.scrollY>0);
 })
+
 
 //------------------------------
 var body = $('body');
