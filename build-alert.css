@@ -1,0 +1,23 @@
+.imagen-build{
+    background-image: url(images/build-alert.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+.texto-build{
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+.imagen-build{
+    width: 100%;
+    height: 260px;
+    padding: 0px 20px;
+}
+    
+}

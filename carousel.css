@@ -1,0 +1,101 @@
+/* Base styling for disabled carousel */
+.carousel {
+  box-sizing: border-box;
+  padding-top: 25%;
+  position: relative;
+}
+
+.carousel-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.carousel-inner > li {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+  border-radius: 10px;
+}
+.carousel-inner > li:nth-child(1) {
+  background-image: url(images/portada-mathive.png);
+  background-position:center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+.carousel-inner > li:nth-child(2) {
+  background-image: url(images/portada-space.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+.carousel-inner > li:nth-child(3) {
+  background-image: url(images/portada-clean.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+
+
+/* If enabled, carousel has class of carousel-active */
+.carousel-active .carousel-inner > li {
+  position: absolute;
+  width: 100%;
+}
+.carousel-active .carousel-inner.animate {
+  transition: left .3s ease;
+}
+
+.carousel-control {
+  background-color: rgba(255, 255, 255,0);
+  border: 0;
+  color: rgb(220, 220, 220);
+  cursor: pointer;
+  padding: 0 5%;
+  position: absolute;
+  z-index: 2000;
+  font-weight: 200;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.carousel-control:hover {
+  color: #fff;
+  font-size: 22px;
+}
+
+.carousel-control.prev {
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+.carousel-control.next {
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-active .carousel-inner > li {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+  }
+
+  .carousel-control {
+    color: #fff;
+    cursor: pointer;
+    padding: 0 10%;
+  }
+  
+
+}
