@@ -26,7 +26,8 @@
 var altura = $(window).innerHeight();
 const alt = parseInt(altura);
 console.log(altura);
-//$('#cabecera').height(altura);
+$('#cabecera').height(altura);
+$('#sobre-mi').height(altura);
 
 $(window).scroll(function() {
     if ($("#sobre-mi").offset().top > alt) {
