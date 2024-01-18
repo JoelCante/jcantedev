@@ -24,13 +24,15 @@
 
 //ajusta la altura de la seccion "cabecera" con la altura del disponible viewport------------------------------
 var altura = $(window).innerHeight();
-const alt = parseInt(altura);
-console.log(altura);
+var alt = parseInt(altura);
+const altmaxima = alt+10;
+
+console.log(altmaxima);
 $('#cabecera').height(altura);
-$('#sobre-mi').height(altura);
+$('#sobre-mi').height(altmaxima);
 
 $(window).scroll(function() {
-    if ($("#sobre-mi").offset().top > alt) {
-        $("#sobre-mi").addClass("scroll");
+    if ($("#sobre-mi").offset().top > 0) {
+        $("#sobre-mi").addClass("contenedor-estatico");
     }
   });

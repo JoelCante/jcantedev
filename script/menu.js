@@ -1,6 +1,6 @@
 window.addEventListener("scroll", function(){
   var menu = document.getElementById('menu-flotante');
-  menu.classList.toggle("abajo",window.scrollY>0);
+  menu.classList.toggle("abajo",window.scrollY>20);
 })
 
 
