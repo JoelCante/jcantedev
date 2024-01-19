@@ -100,7 +100,7 @@ ul {
 }
 
 header {
-  overflow: hidden;
+  overflow:hidden;
   /*background-color: var(--blanco-oscuro);*/
 }
 
@@ -310,21 +310,25 @@ li .texto-blanco:hover,
   padding-top: 3%;
 }
 
-.boton-medio {
-  display: inline-flex;
-  justify-content: space-evenly;
+.boton-oscuro {
+  padding: 10px 15px;
+  margin-top: 10px;
   border-radius: 12px;
-  width: 40%;
-  height: 50px;
+  background-color: var(--negro-claro);
+  color: var(--blanco);
 }
 
-.boton-azul {
+.boton-oscuro:hover{
+  background-color: var(--azul-claro);
   color: var(--azul-oscuro);
-  border-bottom: 1px solid var(--azul-oscuro);
 }
 
-.boton-borde {
-  border: 2px solid;
+.boton-borde-oscuro {
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 12px;
+    border:2px solid var(--negro-claro);
+    color: var(--negro-claro);
 }
 
 .texto-azul {
@@ -334,6 +338,7 @@ li .texto-blanco:hover,
 .seccion-sobre-mi {
   background-color: var(--blanco);
   height: auto;
+  padding: 50px 0px;
 }
 
 .contenedor-estatico {
@@ -344,7 +349,7 @@ li .texto-blanco:hover,
 .contenedor-sobre-mi {
   width: 100%;
   margin: auto;
-  padding: 50px 0px;
+  padding: 50px 0px 50px 0px;
   color: var(--negro-medio);
 }
 
@@ -366,14 +371,14 @@ li .texto-blanco:hover,
   padding: 20px 0px;
 }
 
-.contenedor-sobre-mi h3 {
+.contenedor-sobre-mi p {
   font-size: 25px;
   line-height: 30px;
   font-weight: 500;
   text-align: center;
   width: 60%;
   margin: auto;
-  padding: 20px 0px;
+  padding: 20px 0px 40px 0px;
   color: var(--negro-claro);
 }
 
@@ -390,25 +395,15 @@ li .texto-blanco:hover,
 }
 
 .contenedor-frase {
-  width: 95%;
-  height: auto;
-  padding-top: 100px;
-  border-radius: 30px 30px 0px 0px;
+  width:100%;
+  height: 550px;
+  border-radius: 30px;
   overflow: hidden;
   position: relative;
   z-index: 5;
   background-color: var(--negro);
 }
 
-
-.boton-ancho {
-  display: inline-flex;
-  justify-content: space-evenly;
-  border-radius: 12px;
-  width: 20%;
-  height: 50px;
-  margin: 50px 0px;
-}
 
 .boton-blanco {
   background-color: var(--color-oscuro);
@@ -423,27 +418,28 @@ li .texto-blanco:hover,
   align-items: flex-start;
   justify-content: flex-start;
   text-align: left;
-  width: 90%;
-  margin-top:50px ;
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  padding-left: 10%;
   color: var(--blanco);
 }
 
 .frase h2 {
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 35px;
+  padding-bottom: 20px;
   width: 20%;
-  padding-left: 15%;
 }
 
 .contenedor-mi-foto {
   width: 100%;
-  height: 60vh;
+  height: 100%;
   background-image: url(images/mi-foto.jpg);
   background-position: 75%;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 30px;
 }
 
 @media screen and (max-width: 900px) {
@@ -466,6 +462,13 @@ li .texto-blanco:hover,
 }
 
 @media screen and (max-width: 500px) {
+
+  .figura-fondo {
+    z-index: 1;
+    width: 100vw;
+    height: 150px;
+  }
+
   .menu {
     display: none;
     flex-direction: column;
@@ -577,12 +580,11 @@ li .texto-blanco:hover,
     padding: 10px 0px;
   }
 
-  .contenedor-sobre-mi h3 {
+  .contenedor-sobre-mi p {
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
     width: 80%;
-    padding: 10px 0px;
   }
 
   .frase {
@@ -598,9 +600,9 @@ li .texto-blanco:hover,
 
   .frase h2 {
     font-size: 25px;
-    font-weight: 500;
-    line-height: 35px;
-    width: 20%;
+    font-weight: 600;
+    line-height: 30px;
+    width: 50%;
     padding-left: 5%;
   }
 
