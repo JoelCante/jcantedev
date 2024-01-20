@@ -288,16 +288,20 @@ li .texto-blanco:hover,
   color: var(--negro-claro);
 }
 
-.degradado-verde {
-  background: -webkit-linear-gradient(
+.verde {
+  /*background: -webkit-linear-gradient(
     90deg,
     var(--verde-claro),
     var(--verde-claro)
   );
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #5c9f89;
+  -webkit-text-fill-color: transparent;*/
+  color: var(--verde-oscuro);
+}
+
+.verde-claro {
+  color: var(--verde-claro);
 }
 
 .contenedor-botones-h {
@@ -353,7 +357,15 @@ li .texto-blanco:hover,
   color: var(--negro-medio);
 }
 
-.contenedor-sobre-mi h1 {
+.contenedor-sobre-mi h2{
+  font-size: 40px;
+  line-height: 45px;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
+.titulo {
   font-size: 45px;
   line-height: 50px;
   text-align: center;
@@ -361,7 +373,7 @@ li .texto-blanco:hover,
   margin: auto;
 }
 
-.contenedor-sobre-mi h2 {
+.subtitulo {
   font-size: 25px;
   line-height: 30px;
   font-weight: 600;
@@ -371,7 +383,7 @@ li .texto-blanco:hover,
   padding: 20px 0px;
 }
 
-.contenedor-sobre-mi p {
+.texto-sobre-mi {
   font-size: 25px;
   line-height: 30px;
   font-weight: 500;
@@ -382,15 +394,15 @@ li .texto-blanco:hover,
   color: var(--negro-claro);
 }
 
-.degradado-azul {
-  background: -webkit-linear-gradient(
+.azul {
+  /*background: -webkit-linear-gradient(
     90deg,
     var(--azul-principal),
     var(--azul-principal)
   );
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;*/
   color: var(--azul-principal);
 }
 
@@ -441,6 +453,71 @@ li .texto-blanco:hover,
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.contenedor-titulo{
+  margin-top: 50px;
+}
+
+.azul-oscuro{
+  color: var(--azul-oscuro);
+}
+
+.seccion-portafolio{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.contenedor-slide-portafolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 5;
+  margin-top: 20px;
+}
+
+.slide-portafolio {
+  position: relative;
+  width: 90%;
+  height: 500px;
+}
+
+
+.contenido-slide {
+  width: 90%;
+  height: 20%;
+  margin: 30% 5%;
+  display: grid;
+  grid-template-columns: 5% 42% 5% 42% 5%;
+  grid-auto-rows: minmax(auto, auto);
+  grid-template-areas: ".info1 info1 info1." ".info2 . info3.";
+  transition: 0.5s;
+}
+
+.contenido-slide p {
+  text-align: center;
+  grid-area: info1;
+}
+
+.contenedor-fila {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 115%;
+  grid-area: info2;
+}
+
+.logo-slide {
+  width: 45%;
+  height: auto;
+  margin: auto;
+  grid-area: info3;
+}
+
+
 
 @media screen and (max-width: 900px) {
   .ancho {
@@ -493,7 +570,7 @@ li .texto-blanco:hover,
 
   .menu ul li {
     font-family: "poppins", sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 600;
     color: var(--negro-claro);
     margin: 10px;
@@ -566,13 +643,19 @@ li .texto-blanco:hover,
     height: 45px;
   }
 
-  .contenedor-sobre-mi h1 {
+  .contenedor-sobre-mi h2{
+    font-size: 25px;
+    line-height: 30px;
+    width: 80%;
+  }
+
+  .titulo{
     font-size: 30px;
     line-height: 35px;
     width: 80%;
   }
 
-  .contenedor-sobre-mi h2 {
+  .subtitulo {
     font-size: 20px;
     font-weight: 600;
     line-height: 25px;
@@ -580,7 +663,7 @@ li .texto-blanco:hover,
     padding: 10px 0px;
   }
 
-  .contenedor-sobre-mi p {
+  .texto-sobre-mi{
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
@@ -611,15 +694,20 @@ li .texto-blanco:hover,
   }
 }
 
+
 @media screen and (max-width: 350px) {
 
-  .contenedor-sobre-mi h1 {
+  .menu ul li {
+    font-size: 25px;
+  }
+
+  .titulo {
     font-size: 25px;
     line-height: 30px;
     width: 80%;
   }
 
-  .contenedor-sobre-mi h2 {
+  .subtitulo {
     font-size: 15px;
     font-weight: 600;
     line-height: 20px;
@@ -627,12 +715,16 @@ li .texto-blanco:hover,
     padding: 10px 0px;
   }
 
-  .contenedor-sobre-mi h3 {
+  .texto-sobre-mi {
     font-size: 15px;
     font-weight: 500;
     line-height: 20px;
     width: 70%;
     padding: 10px 0px;
+  }
+
+  .contenedor-frase {
+    height: 490px;
   }
 
   .frase h2 {

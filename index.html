@@ -10,8 +10,8 @@
     <script src="https://kit.fontawesome.com/2ee0245f3d.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <!--<link rel="stylesheet" href="carousel.css" rel="stylesheet">-->
-    <title>Inicio | Joel Canté</title>
+    <link rel="stylesheet" href="carousel.css" rel="stylesheet">
+    <title>Inicio - Joel Canté</title>
 </head>
 <body>
     <header class="columna fondo-gradiente" id="cabecera">
@@ -57,10 +57,10 @@
                 <div class="texto-bienvenida">
                     <h2>Hola 👋🏽</h2>
                     <h1>Me llamo Joel.</h1>
-                    <h1>Diseñador de UI/UX & <span class="degradado-verde">Desarrollador Frontend</span></h1>
+                    <h1>Diseñador de UI/UX & <span class="verde-claro">Desarrollador Frontend</span></h1>
                     <div class="contenedor-botones-h">
                        <!--   <a class="boton-medio boton-borde texto-azul" href="#">Servicios</a>-->
-                        <a class="boton-oscuro" href="#">Portafolio  <i class="fa-solid fa-arrow-right"></i></a>
+                        <a class="boton-oscuro" href="#">Portafolio <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -70,8 +70,8 @@
     <section class="seccion-sobre-mi columna">
     <div class="contenedor-sobre-mi ancho columna" id="sobre-mi">
        <article class="columna">
-        <h2>Sobre mí</h2>
-        <h1  class="degradado-azul">Dedicado a diseñar y crear soluciones cautivadoras y funcionales</h1>
+        <h3 class="subtitulo">Sobre mí</h3>
+        <h2  class="azul">Dedicado a diseñar y crear soluciones cautivadoras y funcionales</h2>
         <p class="texto-sobre-mi">  Con experiencia en el diseño de
             interfaces web y móviles, me centro especialmente 
             en la mejora de la UX del usuario.</p>
@@ -84,7 +84,7 @@
             <h2>Trabajando 
                 entre
                 la creatividad 
-                y la tecnología. <br> <span class="degradado-verde"> Diseñando
+                y la tecnología. <br> <span class="verde"> Diseñando
                     soluciones.
                   </span>
               </h2>
@@ -95,12 +95,83 @@
             
         </div>
   </div>
+    </section>
 
+    <section class="seccion-portafolio">
+        <div class="contenedor-titulo ancho">
+            <h2 class="titulo"> Mis Proyectos <span class="azul-oscuro">más recientes</span></h2>
+            <p class="texto-sobre-mi">Aquí encontrarás los proyectos más recientes en los que
+                he trabajado.</p>
+           </article>
+        </div>
+        
+                   <!-- partial:index.partial.html -->
+<div class="contenedor-slide-portafolio">
+    <div class="carousel slide-portafolio">
+        <ul class="carousel-inner">
+            <li class="portafolio-mathive"><div class="contenido-slide">
+                <p class="gabareg-catorce blanco">
+                    Proyecto de residencia profesional.
+                    Herramienta colaborativa
+                </p>
+                <div class="contenedor-fila">
+                    <a href="#" class="boton-relleno boton-color-blanco boton-uno poppins-reg-diesieis">
+                        Ver más
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="portafolio.html" class="boton-borde-blanco boton-dos poppins-reg-diesieis">
+                        Visitar Portafolio
+                    </a>
+                </div>
+                <figure class="logo-slide">
+                    <img src="images/mathive-blanco-logo.png" alt="">
+                </figure>
+            </div></li>
+            <li> <div class="contenido-slide">
+                <p class="gabareg-catorce blanco">
+                    Diseño de un sitio web para buscar eventos astronómicos
+                </p>
+                <div class="contenedor-fila">
+                    <a href="#" class="boton-relleno boton-color-blanco boton-uno poppins-reg-diesieis">
+                        Ver más
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="portafolio.html" class="boton-borde-blanco boton-dos poppins-reg-diesieis">
+                        Visitar Portafolio
+                    </a>
+                </div>
+                <figure class="logo-slide">
+                    <img src="images/eclipse-map-logo.png" alt="">
+                </figure>
+            </div>
+            </li>
+            <li> 
+                <div class="contenido-slide">
+                    <p class="gabareg-catorce blanco">
+                        Diseño de sitio web de una empresa de limpieza de pisicinas
+                    </p>
+                    <div class="contenedor-fila">
+                        <a href="#" class="boton-relleno boton-color-blanco boton-uno poppins-reg-diesieis">
+                            Ver más
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="portafolio.html" class="boton-borde-blanco boton-dos poppins-reg-diesieis">
+                            Visitar Portafolio
+                        </a>
+                    </div>
+                    <figure class="logo-slide">
+                        <img src="images/pool-clean-logo.png" alt="">
+                    </figure>
+                </div>
+            </li>
+        </ul> <!-- /.carousel-inner -->
+    </div> <!-- /.carousel -->
     </section>
 
 
     <script type="text/javascript" src="script/menu.js">
     </script>
     <script type="text/javascript" src="script/parallax.js"></script>
+    <script type="text/javascript" src="script/carrusel.js"></script>
 </body>
 </html>
