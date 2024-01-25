@@ -1,103 +1,69 @@
-/* Base styling for disabled carousel */
-.carousel {
-  box-sizing: border-box;
-  padding-top: 25%;
-  position: relative;
-  position: relative;
+.swiper {
+  width: 100%;
+  height: 480px;
+  margin: 20px 0px;
 }
 
-.carousel-inner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.carousel-inner > li {
-  box-sizing: border-box;
-  height: 100%;
-  margin: 0 auto;
-  padding: 1em;
+.swiper-slide {
   text-align: center;
-  border-radius: 30px;
+  background: var(--verde-claro);
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  border-radius:25px;
+  overflow: hidden;
 }
 
-.carousel-inner > li:nth-child(1) {
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#solid{
   background-image: url(images/portada-mathive.png);
-  background-position:center;
-  background-size: cover;
-  width: 100%;
-  height: 500px;
-}
-.carousel-inner > li:nth-child(2) {
-  background-image: url(images/portada-space.jpg);
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: 500px;
 }
-.carousel-inner > li:nth-child(3) {
-  background-image: url(images/portada-clean.jpg);
+
+#solid-2{
+  background-image: url(images/donut\ \(1\).jpg);
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: 500px;
+}
+
+#solid-3{
+  background-image: url(images/donut\ \(2\).jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
-/* If enabled, carousel has class of carousel-active */
-.carousel-active .carousel-inner > li {
-  position: absolute;
-  width: 100%;
-}
-.carousel-active .carousel-inner.animate {
-  transition: left .3s ease;
+#color-slide{
+  background-color: #007598b3;
 }
 
-.carousel-control {
-  background-color: rgba(255, 255, 255,0);
-  border: 0;
-  color: rgb(220, 220, 220);
-  cursor: pointer;
-  padding: 0 5%;
-  position: absolute;
-  z-index: 2000;
-  font-weight: 200;
-  font-size: 20px;
-  transition: 0.5s;
+#color-2{
+  background-color: #a2905fb3;
 }
 
-.carousel-control:hover {
-  color: #fff;
-  font-size: 22px;
+#color-3{
+  background-color: #0d3350b3;
 }
 
-.carousel-control.prev {
-  top: 0;
-  left: 0;
-  bottom: 0;
-}
-.carousel-control.next {
-  top: 0;
-  right: 0;
-  bottom: 0;
+#color{
+  background-color: #83ae8ab3;
 }
 
-@media screen and (max-width: 768px) {
-  .carousel-active .carousel-inner > li {
-    position: absolute;
+@media screen and (max-width: 500px){
+  .swiper {
     width: 100%;
-    height: 100%;
+    height: 450px;
+    margin: 20px 0px;
   }
-
-  .carousel-control {
-    color: #fff;
-    cursor: pointer;
-    padding: 0 10%;
-  }
-  
-
 }
